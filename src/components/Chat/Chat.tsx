@@ -4,8 +4,15 @@ import { Rocket } from '@/lib/types'
 import { RadiobuttonIcon, RocketIcon } from '@radix-ui/react-icons'
 import { useChat } from 'ai/react'
 import { Input } from '../ui/input'
+import { useEffect, useRef } from 'react'
 
 export default function Chat({ data }: { data: Rocket }) {
+    const inputRef = useRef<HTMLInputElement>(null) // Step 2
+    useEffect(() => {
+        // Step 3
+        inputRef.current?.focus()
+    }, [])
+
     const { messages, input, handleInputChange, handleSubmit, metadata } =
         useChat({
             initialMessages: [
@@ -50,6 +57,7 @@ export default function Chat({ data }: { data: Rocket }) {
                 >
                     <Input
                         value={input}
+                        ref={inputRef} // Step 4
                         onChange={handleInputChange}
                         className="px-4 py-2 bg-black border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
                         placeholder="Ask something about the planet"

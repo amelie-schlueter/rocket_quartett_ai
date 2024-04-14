@@ -8,7 +8,7 @@ const Back = () => {
     const router = useRouter()
     return (
         <div
-            className="fixed left-[20vw] top-12 flex items-start gap-2 cursor-pointer"
+            className="sticky md:fixed md:left-[2vw] xl:left-[20vw] md:top-12 top-4 flex items-start gap-2 cursor-pointer"
             onClick={() => router.back()}
         >
             <CornerTopLeftIcon strokeWidth="1.5" /> <p className="">Back</p>

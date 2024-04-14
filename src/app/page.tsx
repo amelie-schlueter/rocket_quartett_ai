@@ -12,7 +12,7 @@ const Page = () => {
 
     return (
         <div>
-            <header className="header w-full flex justify-between items-center mb-16">
+            <header className="header w-full flex flex-col md:flex-row justify-between items-center mb-16">
                 <div>
                     <h1 className="">Rocket-Quartett</h1>
                     <p>
