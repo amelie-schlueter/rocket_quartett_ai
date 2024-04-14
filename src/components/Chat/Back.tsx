@@ -1,17 +1,20 @@
 'use client'
 
-import { CornerTopLeftIcon } from '@radix-ui/react-icons'
+import { ArrowLeftIcon, CornerTopLeftIcon } from '@radix-ui/react-icons'
 import { useRouter } from 'next/navigation'
 import React from 'react'
+import { Button } from '../ui/button'
 
 const Back = () => {
     const router = useRouter()
     return (
         <div
-            className="sticky md:fixed md:left-[2vw] xl:left-[20vw] md:top-12 top-4 flex items-start gap-2 cursor-pointer"
+            className="fixed items-center w-full md:fixed left-0 top-0 p-2 bg-gradient-to-b from-background  to-background/50   md:w-fit md:bg-transparent md:left-[2vw] xl:left-[20vw] md:top-12  flex  gap-1 cursor-pointer"
             onClick={() => router.back()}
         >
-            <CornerTopLeftIcon strokeWidth="1.5" /> <p className="">Back</p>
+            <Button className="gap-1" variant={'outline'}>
+                <ArrowLeftIcon strokeWidth="1.5" /> Back
+            </Button>
         </div>
     )
 }
