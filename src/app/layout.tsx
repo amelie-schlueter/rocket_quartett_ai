@@ -27,7 +27,7 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <RocketDataContextProvider>
-                        <main>{children}</main>
+                        <main className="bg-background">{children}</main>
                     </RocketDataContextProvider>
                 </ThemeProvider>
             </body>

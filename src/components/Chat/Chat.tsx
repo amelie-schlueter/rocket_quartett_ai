@@ -31,7 +31,7 @@ export default function Chat({ data }: { data: Rocket }) {
             ],
         })
     return (
-        <div className="flex flex-col mt-4 w-full max-w-[700px]    stretch pb-32">
+        <div className="flex flex-col  mt-4 w-full max-w-[700px]  bg-background  stretch pb-32">
             <div className=" w-full">
                 {messages.map((m) => (
                     <div
@@ -57,17 +57,17 @@ export default function Chat({ data }: { data: Rocket }) {
                 ))}
             </div>
 
-            <div className="fixed bottom-0 bg-gradient-to-t  from-black from-80% to-black/30 w-full left-0 right-0 flex items-center justify-center ">
+            <div className="fixed bg-background bottom-0 bg-gradient-to-t  from-black from-80% to-black/30 w-full left-0 right-0 flex items-center justify-center ">
                 <form
                     onSubmit={handleSubmit}
                     className="  border-2 mx-auto left-0 right-0 border-white/20 rounded-md max-w-lg w-full h-[125px] p-6"
                 >
-                    <div className="flex gap-1">
+                    <div className="flex gap-1 ">
                         <Input
                             value={input}
                             ref={inputRef} // Step 4
                             onChange={handleInputChange}
-                            className="px-4 py-2 bg-black text-base border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
+                            className="px-4 py-2  text-base border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
                             placeholder="Ask something about the planet"
                         />
                         <Button variant={'default'} className="">

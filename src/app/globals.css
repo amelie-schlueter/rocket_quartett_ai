@@ -36,10 +36,10 @@
   }
 
   .dark {
-    --background: 224 71.4% 4.1%;
+    --background: 0 0% 2%;
     --foreground: 210 20% 98%;
 
-    --card: 224 71.4% 4.1%;
+    --card: 0 0% 2%;
     --card-foreground: 210 20% 98%;
 
     --popover: 224 71.4% 4.1%;
@@ -60,10 +60,10 @@
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 20% 98%;
 
-    --border: 215 27.9% 16.9%;
+    --border: 0 0% 15%;
     --border-accent: 23 100% 60%;
-    --input: 215 27.9% 16.9%;
-    --ring: 216 12.2% 83.9%;
+    --input: 0 0% 15%;
+    --ring: 0 0% 15%;
   }
 }
 
@@ -73,7 +73,7 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply text-foreground bg-background;
   }
 
   main {
@@ -180,7 +180,6 @@ h3 {
 }
 
 .card-image-switch {
-  background-color: var(--background-color);
   border: 1px solid var(--accent-color);
   padding: 1rem;
   color: var(--text-color);

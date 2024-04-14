@@ -9,7 +9,7 @@ const Page = ({ params }: { params: { id: string } }) => {
     const data = rocketData.find((rocket) => rocket.id === parseInt(params.id))
 
     return (
-        <div className="max-w-[700px] mx-auto">
+        <div className="max-w-[700px] mx-auto bg-background">
             {data && <ChatHeader data={data} />}
             {data && <Chat data={data} />}
         </div>
