@@ -1,26 +1,34 @@
-'use client';
- 
-import { useChat } from 'ai/react';
- 
-export default function Chat() {
-  const { messages, input, handleInputChange, handleSubmit } = useChat();
-  return (
-    <div className="flex flex-col w-full max-w-md py-24 mx-auto stretch">
-      {messages.map(m => (
-        <div key={m.id} className="whitespace-pre-wrap">
-          {m.role === 'user' ? 'User: ' : 'AI: '}
-          {m.content}
+'use client'
+import Card from '@/components/Cards/Card'
+import { Combobox } from '@/components/Combobox'
+import Navbar from '@/components/Layout/Navbar'
+import { RocketDataContext } from '@/lib/RocketDataContext'
+import { rocketData } from '@/lib/data'
+
+import React, { useContext } from 'react'
+
+const Page = () => {
+    const context = useContext(RocketDataContext)
+
+    return (
+        <div>
+            <header className="header w-full flex justify-between items-center mb-16">
+                <div>
+                    <h1 className="">Rocket-Quartett</h1>
+                    <p>
+                        Welcome to our Rocket quartett the best rocket
+                        experience on our home planet.
+                    </p>
+                </div>
+                <Navbar />
+            </header>
+            <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3 2xl:grid-cols-4">
+                {context!.data.map((rocket, i) => {
+                    return <Card key={i} rocket={rocket} />
+                })}
+            </div>
         </div>
-      ))}
- 
-      <form onSubmit={handleSubmit}>
-        <input
-          className="fixed bottom-0 w-full max-w-md p-2 mb-8 border border-gray-300 rounded shadow-xl"
-          value={input}
-          placeholder="Say something..."
-          onChange={handleInputChange}
-        />
-      </form>
-    </div>
-  );
+    )
 }
+
+export default Page
