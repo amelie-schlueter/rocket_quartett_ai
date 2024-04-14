@@ -1,10 +1,17 @@
 'use client'
 
 import { Rocket } from '@/lib/types'
-import { RadiobuttonIcon, RocketIcon } from '@radix-ui/react-icons'
+import {
+    EnterIcon,
+    MagicWandIcon,
+    PaperPlaneIcon,
+    RadiobuttonIcon,
+    RocketIcon,
+} from '@radix-ui/react-icons'
 import { useChat } from 'ai/react'
 import { Input } from '../ui/input'
 import { useEffect, useRef } from 'react'
+import { Button } from '../ui/button'
 
 export default function Chat({ data }: { data: Rocket }) {
     const inputRef = useRef<HTMLInputElement>(null) // Step 2
@@ -55,13 +62,18 @@ export default function Chat({ data }: { data: Rocket }) {
                     onSubmit={handleSubmit}
                     className="  border-2 mx-auto left-0 right-0 border-white/20 rounded-md max-w-lg w-full h-[125px] p-6"
                 >
-                    <Input
-                        value={input}
-                        ref={inputRef} // Step 4
-                        onChange={handleInputChange}
-                        className="px-4 py-2 bg-black text-base border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
-                        placeholder="Ask something about the planet"
-                    />
+                    <div className="flex gap-1">
+                        <Input
+                            value={input}
+                            ref={inputRef} // Step 4
+                            onChange={handleInputChange}
+                            className="px-4 py-2 bg-black text-base border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
+                            placeholder="Ask something about the planet"
+                        />
+                        <Button variant={'default'} className="">
+                            <PaperPlaneIcon />
+                        </Button>
+                    </div>
                     <p className="text-xs text-white/40 text-center mt-4">
                         This is a Rocket Chatbot. Ask questions about the
                         rocket.

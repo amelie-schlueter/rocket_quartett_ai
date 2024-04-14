@@ -14,7 +14,7 @@ const MoreInformationCollapsable = ({ data }: { data: Rocket }) => {
     return (
         <div className="block md:hidden">
             {' '}
-            <h1 className="">{data.name}</h1>
+            <h2 className="mt-2 text-[2rem]">{data.name}</h2>
             <Collapsible className=" pb-4">
                 <CollapsibleTrigger className="flex items-center gap-1 text-accent mt-4 underline">
                     More Information
@@ -41,12 +41,12 @@ const MoreInformationCollapsable = ({ data }: { data: Rocket }) => {
                         />
                         <ChatHeaderItem value={data.group} label={'Group'} />
                     </div>
-                    <div className="w-full h-fullmd:max-h-full">
+                    <div className="w-full h-full">
                         <Image
                             src={`/${data.image}`}
                             height={1000}
                             width={1000}
-                            className="w-full h-full  object-cover"
+                            className="w-full h-full  max-h-[200px]  object-cover"
                             alt="image"
                         />{' '}
                     </div>
