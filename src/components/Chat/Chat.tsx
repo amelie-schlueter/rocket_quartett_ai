@@ -57,17 +57,17 @@ export default function Chat({ data }: { data: Rocket }) {
                 ))}
             </div>
 
-            <div className="fixed bg-background bottom-0 bg-gradient-to-t  from-black from-80% to-black/30 w-full left-0 right-0 flex items-center justify-center ">
+            <div className="fixed  bottom-0  w-full left-0 right-0 flex items-center justify-center ">
                 <form
                     onSubmit={handleSubmit}
-                    className="  border-2 mx-auto left-0 right-0 border-white/20 rounded-md max-w-lg w-full h-[125px] p-6"
+                    className="  mx-auto left-0 right-0 border-white/20  max-w-[700px] w-full  bg-gradient-to-t  from-background from-80% to-black/30 md:rounded-md h-[125px] p-4 pt-6 "
                 >
                     <div className="flex gap-1 ">
                         <Input
                             value={input}
                             ref={inputRef} // Step 4
                             onChange={handleInputChange}
-                            className="px-4 py-2  text-base border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
+                            className="px-4 py-3   text-base border-white/20 border-t-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
                             placeholder="Ask something about the planet"
                         />
                         <Button variant={'default'} className="">
