@@ -59,7 +59,7 @@ export default function Chat({ data }: { data: Rocket }) {
                         value={input}
                         ref={inputRef} // Step 4
                         onChange={handleInputChange}
-                        className="px-4 py-2 bg-black border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
+                        className="px-4 py-2 bg-black text-base border-white/20 border-[1px] rounded-md w-full max-w-md mx-auto text-white placeholder:text-white/40"
                         placeholder="Ask something about the planet"
                     />
                     <p className="text-xs text-white/40 text-center mt-4">
