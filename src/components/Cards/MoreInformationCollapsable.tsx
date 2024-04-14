@@ -16,7 +16,7 @@ const MoreInformationCollapsable = ({ data }: { data: Rocket }) => {
             {' '}
             <h2 className="mt-2 text-[2rem]">{data.name}</h2>
             <Collapsible className=" pb-4">
-                <CollapsibleTrigger className="flex items-center gap-1 text-accent mt-4 underline">
+                <CollapsibleTrigger className="flex items-center gap-1 text-primary mt-4 underline">
                     More Information
                     <span>
                         <ChevronDownIcon />{' '}
