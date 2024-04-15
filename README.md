@@ -1,4 +1,4 @@
-<img src="quartett-preview.png" alt="quartett-preview"/>
+<img src="src/og-image.png" alt="quartett-preview"/>
 
 ## Rocket Quartett 🚀
 

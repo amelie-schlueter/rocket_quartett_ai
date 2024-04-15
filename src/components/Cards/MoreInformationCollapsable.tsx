@@ -54,7 +54,7 @@ const MoreInformationCollapsable = ({ data }: { data: Rocket }) => {
                             height={1000}
                             width={1000}
                             className="w-full h-full  max-h-[200px]  object-cover"
-                            alt="image"
+                            alt={data.name}
                         />{' '}
                     </div>
                 </CollapsibleContent>

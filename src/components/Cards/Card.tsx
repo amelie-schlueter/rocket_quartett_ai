@@ -36,7 +36,7 @@ const Card = (
                 <div className="card-image-wrapper">
                     <Image
                         src={`/${rocket.image}`}
-                        alt="space shuttle image"
+                        alt={rocket.name}
                         className="object-cover w-full h-full "
                         width={1920}
                         height={1920}
