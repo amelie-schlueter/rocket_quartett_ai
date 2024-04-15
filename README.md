@@ -4,7 +4,7 @@
 
 A University Project
 
-Visit the Side: https://rocket-quartett-ai.vercel.app/ ⬅️
+Visit the Site: https://rocket-quartett-ai.vercel.app/ ⬅️
 
 [🩶 My Personal Site](https://amelieschluter.com) |
 [📲 X](https://twitter.com/@amelieschltr) |
