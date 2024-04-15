@@ -25,7 +25,10 @@ const MoreInformationCollapsable = ({ data }: { data: Rocket }) => {
                 <CollapsibleContent>
                     <p>{data.information}</p>
                     <div className=" py-4 grid md:grid-cols-2 md:gap-x-4 text-sm">
-                        <ChatHeaderItem value={data.weight} label={'Weight'} />
+                        <ChatHeaderItem
+                            value={data.max_speed}
+                            label={'Speed'}
+                        />
                         <ChatHeaderItem value={data.weight} label={'Weight'} />
                         <ChatHeaderItem
                             value={data.lead_organization}
