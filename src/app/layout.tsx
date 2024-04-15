@@ -3,7 +3,9 @@ import { Inter, Manrope, Orbitron } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { RocketDataContextProvider } from '@/lib/RocketDataContext'
-import Footer from '@/components/Layout/Footer'
+import Footer from '@/components/Layout/FooterOverlay'
+import HeaderOverlay from '@/components/Layout/HeaderOverlay'
+import FooterOverlay from '@/components/Layout/FooterOverlay'
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--manrope' })
 const orbitron = Orbitron({ subsets: ['latin'], variable: '--orbitron' })
@@ -28,7 +30,11 @@ export default function RootLayout({
                     disableTransitionOnChange
                 >
                     <RocketDataContextProvider>
-                        <main className="bg-background">{children}</main>
+                        <main className="bg-background">
+                            <HeaderOverlay />
+                            {children}
+                            <FooterOverlay />
+                        </main>
                     </RocketDataContextProvider>
                 </ThemeProvider>
             </body>

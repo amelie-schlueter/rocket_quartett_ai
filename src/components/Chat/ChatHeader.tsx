@@ -15,7 +15,7 @@ import MoreInformationCollapsable from '../Cards/MoreInformationCollapsable'
 
 const ChatHeader = ({ data }: { data: Rocket }) => {
     return (
-        <header className=" border-[1px] mt-12 border-orange-500 p-2  bg-black top-0">
+        <header className=" border-[1px] mt-12 md:mt-4 border-orange-500 p-2  bg-black top-0">
             <Back />
             <div className="w-full">
                 <MoreInformationCollapsable data={data} />
