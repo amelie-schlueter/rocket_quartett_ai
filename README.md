@@ -41,14 +41,21 @@ If there are any questions, please let me know. I am active on X. Also feel free
 
 ## How it works
 
----
-
 1. Clone the Repo
-2. Create a .env.local
+2. Create a .env.local file in your root directory
 
 ```
 OPENAI_API_KEY=YOUR_API_KEY
 ```
 
-3. pnpm install
-4. pnpm run dev
+3. Install all the dependecies using pnpm install
+
+```
+pnpm install
+```
+
+4. Start the Development Sever with pnpm run dev
+
+```
+pnpm run dev
+```
