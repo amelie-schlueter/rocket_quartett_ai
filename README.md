@@ -17,8 +17,6 @@ This project is a university project. The task was to create a rocket quartet to
 -   [x] ⭕ Filter Functionality
 -   [x] 📲 Reponsiveness
 
----
-
 ### Tech Stack
 
 ---
