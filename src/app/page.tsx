@@ -19,7 +19,7 @@ const Page = () => {
                 <div className="w-full">
                     <h1 className="break-normal">Rocket-Quartett</h1>
                     <p>
-                        Welcome to our Rocket quartett the best rocket
+                        Welcome to our Rocket Quartet, the best rocket
                         experience on our home planet.
                     </p>
                 </div>
