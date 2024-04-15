@@ -1,4 +1,4 @@
-<img src="src/og-image.png" alt="quartett-preview"/>
+<img src="src/app/opengraph-image.png" alt="quartett-preview"/>
 
 # Rocket Quartett 🚀
 
