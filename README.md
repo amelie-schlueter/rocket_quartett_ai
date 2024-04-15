@@ -4,6 +4,8 @@
 
 A University Project
 
+Visit the Side: https://rocket-quartett-ai.vercel.app/ ⬅️
+
 [🩶 My Personal Site](https://amelieschluter.com) |
 [📲 X](https://twitter.com/@amelieschltr) |
 [📥 Email](mailto:as@amelieschlueter.com)
@@ -36,3 +38,17 @@ This project is a university project. The Task was to create a rocket quartett t
 ---
 
 If there are any questions, please let me know. I am active on X. Also feel free to contact me via [📥 Email](mailto:as@amelieschlueter.com).
+
+## How it works
+
+---
+
+1. Clone the Repo
+2. Create a .env.local
+
+```
+OPENAI_API_KEY=YOUR_API_KEY
+```
+
+3. pnpm install
+4. pnpm run dev
