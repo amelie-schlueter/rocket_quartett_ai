@@ -7,19 +7,23 @@ import {
 } from '@/components/ui/collapsible'
 import ChatHeaderItem from '../Chat/ChatHeaderItem'
 import { Rocket } from '@/lib/types'
-import { ChevronDownIcon } from '@radix-ui/react-icons'
+import { ChevronDownIcon, ChevronUpIcon } from '@radix-ui/react-icons'
 import Image from 'next/image'
 
 const MoreInformationCollapsable = ({ data }: { data: Rocket }) => {
+    const [open, setOpen] = React.useState(false)
     return (
         <div className="block md:hidden">
             {' '}
             <h2 className="mt-2 text-[2rem]">{data.name}</h2>
-            <Collapsible className=" pb-4">
-                <CollapsibleTrigger className="flex items-center gap-1 text-primary mt-4 underline">
+            <Collapsible className=" ">
+                <CollapsibleTrigger
+                    className="flex items-center gap-1 text-primary mt-4 mb-3 underline"
+                    onClick={() => setOpen((prev) => !prev)}
+                >
                     More Information
                     <span>
-                        <ChevronDownIcon />{' '}
+                        {!open ? <ChevronDownIcon /> : <ChevronUpIcon />}
                     </span>
                 </CollapsibleTrigger>
                 <CollapsibleContent>
