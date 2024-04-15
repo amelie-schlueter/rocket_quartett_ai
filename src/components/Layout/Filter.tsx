@@ -120,7 +120,7 @@ export function Filter() {
                                 context?.setData(rocketData) // Reset the filtered data
                             }}
                         >
-                            <p className="flex items-center w-full justify-between">
+                            <p className="flex items-center w-full justify-between  text-muted-foreground">
                                 Clear Filter
                                 <span className="">
                                     <TrashIcon />{' '}

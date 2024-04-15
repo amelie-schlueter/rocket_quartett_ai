@@ -38,8 +38,8 @@
     --primary-foreground: 60 9.1% 97.8%;
     --secondary: 12 6.5% 15.1%;
     --secondary-foreground: 60 9.1% 97.8%;
-    --muted: 12 6.5% 15.1%;
-    --muted-foreground: 24 5.4% 63.9%;
+    --muted: 20 14.3% 4.1%;
+    --muted-foreground: 0 0% 50%;
     --accent: 12 6.5% 15.1%;
     --accent-foreground: 60 9.1% 97.8%;
     --destructive: 0 72.2% 50.6%;
@@ -65,7 +65,7 @@
   }
 
   .card {
-    @apply border-[1px] bg-primary border-primary h-fit text-card-foreground rounded-lg w-full p-1.5;
+    @apply border-[1px] h-full bg-primary border-primary text-card-foreground rounded-lg w-full p-1.5;
   }
 
 
@@ -139,6 +139,7 @@ h3 {
 
 .card-inner {
   perspective: 1000px;
+  height: 100%;
 }
 
 .card-image-wrapper {

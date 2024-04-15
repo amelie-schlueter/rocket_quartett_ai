@@ -3,6 +3,7 @@ import { Inter, Manrope, Orbitron } from 'next/font/google'
 import './globals.css'
 import { ThemeProvider } from '@/components/theme-provider'
 import { RocketDataContextProvider } from '@/lib/RocketDataContext'
+import Footer from '@/components/Layout/Footer'
 
 const manrope = Manrope({ subsets: ['latin'], variable: '--manrope' })
 const orbitron = Orbitron({ subsets: ['latin'], variable: '--orbitron' })

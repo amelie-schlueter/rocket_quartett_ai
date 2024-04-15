@@ -10,12 +10,20 @@ const config = {
     ],
     prefix: '',
     theme: {
+        screens: {
+            sm: '640px',
+            md: '768px',
+            lg: '1024px',
+            xl: '1280px',
+            '2xl': '1920px',
+            '3xl': '2420px',
+        },
         container: {
             center: true,
             padding: '2rem',
             screens: {
                 '2xl': '1400px',
-                '3xl': '1700px',
+                '3xl': '2100px',
             },
         },
         extend: {

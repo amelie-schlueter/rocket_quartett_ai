@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -33,7 +34,13 @@ const Card = (
                     </div>
                 </div>
                 <div className="card-image-wrapper">
-                    <img src={rocket.image} alt="space shuttle image" />{' '}
+                    <Image
+                        src={`/${rocket.image}`}
+                        alt="space shuttle image"
+                        className="object-cover w-full h-full "
+                        width={1920}
+                        height={1920}
+                    />
                     {/* Correct self-closing tag and alt attribute */}
                     <div className="card-image-switch">
                         <p>{rocket.information}</p>

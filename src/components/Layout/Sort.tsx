@@ -84,7 +84,7 @@ export function Sort() {
                         <CommandItem
                             key="clear-selection"
                             value=""
-                            className="text-accent"
+                            className="text-muted-foreground"
                             onSelect={() => {
                                 setValue('')
                                 setOpen(false)
